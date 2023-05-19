@@ -1,3 +1,68 @@
-body{
+body {
     background-color: black;
+    display: grid;
+    grid-template-rows: 2fr;
+    grid-column: 1fr;
+    grid-template-areas:
+        "nav"
+        "lateral"
+        "principal"
+        "pie";
+}
+
+nav {
+    background-color: #b0413e;
+    grid-area: nav;
+}
+
+menu {
+    background-color: #fcaa67;
+    grid-area: lateral;
+
+}
+
+main {
+    background-color: #ffffc7;
+    grid-area: principal;
+    height: 100vh;
+}
+
+footer {
+    background-color: #473335;
+    grid-area: pie;
+}
+
+@media(min-width: 576px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 10fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "nav nav"
+            "lateral principal"
+            "pie pie";
+    }
+
+    nav {
+        background-color: #b0413e;
+        grid-area: nav;
+    }
+
+    menu {
+        background-color: #fcaa67;
+        grid-area: lateral;
+        height: 100vh;
+
+    }
+
+    main {
+        background-color: #ffffc7;
+        grid-area: principal;
+        height: 100vh;
+    }
+
+    footer {
+        background-color: #473335;
+        grid-area: pie;
+    }
 }
