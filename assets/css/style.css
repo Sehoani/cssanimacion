@@ -7,6 +7,7 @@ body {
         "nav"
         "lateral"
         "principal"
+
         "pie";
 }
 
@@ -22,14 +23,23 @@ menu {
 }
 
 main {
+    height: 700vh;
     background-color: #ffffc7;
     grid-area: principal;
-    height: 100vh;
+
 }
+.card{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
 
 footer {
     background-color: #473335;
     grid-area: pie;
+    margin-top: 20px;
 }
 
 @media(min-width: 576px) {
@@ -51,14 +61,33 @@ footer {
     menu {
         background-color: #fcaa67;
         grid-area: lateral;
-        height: 100vh;
-
+        height: 150vh;
     }
 
     main {
         background-color: #ffffc7;
         grid-area: principal;
-        height: 100vh;
+        height: 150vh;
+    }
+    .flex-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 100px;
+
+    }
+    .card{
+        display: flex;
+        flex-direction:column;
+        height: 300px;
+        width: 200px;
+        border: solid 2px black;
+        gap: 20px;
+    }
+    .flex-container img{
+        height: 200px;
+        width: 200px;
+        object-fit: contain;
     }
 
     footer {
@@ -66,3 +95,8 @@ footer {
         grid-area: pie;
     }
 }
+
+
+
+
+/* /*.grayscale {filter: grayscale(100%);}imagen en negro*/ 
