@@ -7,13 +7,38 @@ body {
         "nav"
         "lateral"
         "principal"
-
         "pie";
 }
 
 nav {
     background-color: #b0413e;
     grid-area: nav;
+    height: 50px;
+}
+
+svg {
+    animation-name: logo;
+    position: relative;
+    animation-duration: 5s;
+    animation-delay: 1s;
+
+}
+
+@keyframes logo {
+    from {
+        left: 0px;
+        top: 0px;
+        right: 15px;
+
+    }
+
+    to {
+        right: 15px;
+        top: 0px;
+        left: 0px;
+
+    }
+
 }
 
 menu {
@@ -23,12 +48,13 @@ menu {
 }
 
 main {
-    height: 700vh;
+    height: 100%;
     background-color: #ffffc7;
     grid-area: principal;
 
 }
-.card{
+
+.card {
     height: auto;
     display: flex;
     flex-direction: column;
@@ -69,22 +95,25 @@ footer {
         grid-area: principal;
         height: 150vh;
     }
-    .flex-container{
+
+    .flex-container {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 100px;
 
     }
-    .card{
+
+    .card {
         display: flex;
-        flex-direction:column;
+        flex-direction: column;
         height: 300px;
         width: 200px;
         border: solid 2px black;
         gap: 20px;
     }
-    .flex-container img{
+
+    .flex-container img {
         height: 200px;
         width: 200px;
         object-fit: contain;
@@ -99,4 +128,4 @@ footer {
 
 
 
-/* /*.grayscale {filter: grayscale(100%);}imagen en negro*/ 
+/* /*.grayscale {filter: grayscale(100%);}imagen en negro*/
