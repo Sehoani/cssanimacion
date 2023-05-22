@@ -13,29 +13,13 @@ body {
 nav {
     background-color: #b0413e;
     grid-area: nav;
-    height: 50px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
 }
 
-svg {
-    position: relative;
-    animation-name: logo;
-    animation-duration: 5s;
-    animation-delay: 2s;
-    animation-iteration-count: 2;
-    animation-direction: reverse;
-
-}
-
-@keyframes logo {
-    from {
-        left: 100px;
-        top: 2px;
-    }
-
-    to {
-        right: 100px;
-        top: 2px;
-    }
+nav h1 {
+    font-size: 40px;
 }
 
 
@@ -44,9 +28,28 @@ menu {
     display: flex;
     background-color: #fcaa67;
     grid-area: lateral;
-    height: 100px;
+    height: 100%;
+}
+svg {
+    position: relative;
+    animation-name: logo;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: 2;
+
 }
 
+@keyframes logo {
+    from {
+        width: 50px;
+        height: 50px;
+    }
+
+    to {
+        width: 100px;
+        height: 100px;
+    }
+}
 menu h1 {
     display: flex;
     justify-content: flex-start;
@@ -96,9 +99,20 @@ main {
 footer {
     background-color: #473335;
     grid-area: pie;
+    height: 70px;
     margin-top: 20px;
+
+}
+.iconos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    font-size: 2rem;
 }
 
+
+/*VERSION ESCRITORIO*/
 @media(min-width: 576px) {
     body {
         display: grid;
@@ -115,7 +129,8 @@ footer {
         grid-area: nav;
         display: flex;
     }
-    nav h1{
+
+    nav h1 {
         justify-items: end
     }
 
@@ -134,16 +149,19 @@ footer {
         grid-area: principal;
         height: 123vh;
     }
-    .card img{
+
+    .card img {
         filter: grayscale(100%);
     }
-    .card img:hover{
-        filter:none;
+
+    .card img:hover {
+        filter: none;
         width: 250px;
         height: 250px;
 
 
     }
+
     .flex-container {
         display: flex;
         flex-direction: row;
@@ -170,9 +188,21 @@ footer {
         background-color: #473335;
         grid-area: pie;
     }
+
+
+    .iconos {
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+    }
+
+
+
+
+
+
+
+
+
+
 }
-
-
-
-
-/* /*.grayscale {filter: grayscale(100%);}imagen en negro*/
