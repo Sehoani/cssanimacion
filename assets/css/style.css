@@ -26,6 +26,7 @@ nav h1 {
 
 menu {
     display: flex;
+
     background-color: #fcaa67;
     grid-area: lateral;
     height: 100%;
@@ -63,11 +64,11 @@ menu h1 {
     font-size: 3rem;
 }
 
-menu ul {
+menu ul{
     visibility: hidden;
 }
 
-.card p,
+
 h4 {
     display: flex;
     justify-content: center;
@@ -139,7 +140,13 @@ footer {
         grid-area: lateral;
         height: 120vh;
         width: 150px;
+        display: flex;
+        flex-direction: column;
+
     }
+    menu ul{
+        visibility: visible;
+    }        
 
     .icono {
         font-size: 0rem;
