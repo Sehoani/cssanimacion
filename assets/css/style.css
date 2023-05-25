@@ -31,6 +31,7 @@ menu {
     grid-area: lateral;
     height: 100%;
 }
+
 svg {
     position: relative;
     animation-name: logo;
@@ -51,10 +52,21 @@ svg {
         height: 100px;
     }
 }
+
 menu h1 {
     display: flex;
     justify-content: flex-start;
     justify-items: flex-start;
+}
+
+.card {
+    filter: grayscale(100%);
+    transition: all 2s ease-in-out;
+}
+
+.card:hover {
+    filter: none;
+
 }
 
 .icono {
@@ -64,7 +76,7 @@ menu h1 {
     font-size: 3rem;
 }
 
-menu ul{
+menu ul {
     visibility: hidden;
 }
 
@@ -104,6 +116,7 @@ footer {
     margin-top: 20px;
 
 }
+
 .iconos {
     display: flex;
     flex-direction: row;
@@ -144,9 +157,10 @@ footer {
         flex-direction: column;
 
     }
-    menu ul{
+
+    menu ul {
         visibility: visible;
-    }        
+    }
 
     .icono {
         font-size: 0rem;
@@ -157,6 +171,7 @@ footer {
         height: 200vh;
 
     }
+
     .card {
         display: flex;
         flex-direction: column;
@@ -173,12 +188,15 @@ footer {
         width: 320px;
         height: 350px;
     }
-    button{
+
+    button {
         transition: all 1s ease;
     }
-    button:hover{
+
+    button:hover {
         background-color: #fcaa67;
     }
+
     .flex-container {
         display: flex;
         flex-direction: row;
