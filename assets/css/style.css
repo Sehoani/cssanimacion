@@ -138,7 +138,7 @@ footer {
     menu {
         background-color: #fcaa67;
         grid-area: lateral;
-        height: 120vh;
+        height: 200vh;
         width: 150px;
         display: flex;
         flex-direction: column;
@@ -154,21 +154,31 @@ footer {
 
     main {
         grid-area: principal;
-        height: 123vh;
-    }
+        height: 200vh;
 
-    .card img {
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        width: 300px;
+        gap: 20px;
         filter: grayscale(100%);
+        transition: all 2s linear;
     }
 
-    .card img:hover {
+
+    .card:hover {
         filter: none;
-        width: 250px;
-        height: 250px;
-
-
+        width: 320px;
+        height: 350px;
     }
-
+    button{
+        transition: all 1s ease;
+    }
+    button:hover{
+        background-color: #fcaa67;
+    }
     .flex-container {
         display: flex;
         flex-direction: row;
@@ -177,13 +187,7 @@ footer {
 
     }
 
-    .card {
-        display: flex;
-        flex-direction: column;
-        height: 300px;
-        width: 200px;
-        gap: 20px;
-    }
+
 
     .flex-container img {
         height: 200px;
